@@ -9,6 +9,7 @@
     "babel-loader": "^8.2.2",
     "bootstrap": "^4.5.3",
     "css-loader": "^5.0.1",
+    "enhanced-resolve": "^5.4.1",
     "file-loader": "^6.2.0",
     "jquery": "^3.5.1",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
@@ -27,7 +28,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC"
