@@ -113,7 +113,7 @@ module.exports = {
         "window.jQuery": "jquery"
       }),
       new PurgeCSSPlugin({
-        paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
+        paths: glob.sync(`${PATHS.dist}/**/*`, { nodir: true }),
         only: ['bundle', 'vendor']
       })
     ]
