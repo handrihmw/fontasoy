@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const PurgeCSSPlugin = require('purgecss-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const PATHS = {
   src: path.join(__dirname, 'src')
@@ -96,6 +97,12 @@ module.exports = {
       }
     },
     plugins: [
+      new HtmlWebpackPlugin({
+        hash: true,
+        title: 'Font loading test',
+        template: 'index.html',
+        filename: 'index.html' //relative to root of the application
+      }),
       new MiniCssExtractPlugin({
         filename: 'css/app.css',
         chunkFilename: 'css/app.css'
