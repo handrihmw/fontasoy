@@ -1,0 +1,32 @@
+@import 'font-family';
+@import './bootstrap/bootstrap.scss';
+@import './fontawesome/all.scss';
+
+body {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-regular {
+  font-family: 'NunitoSans', sans-serif;
+}
+
+.font-bold {
+  font-family: 'NunitoSansBold', sans-serif;
+}
+
+.font-light {
+  font-family: 'NunitoSansLight', sans-serif;
+}
+
+.icon {
+  float: left;
+  position: relative;
+  top: 0;
+  right: 10px;
+}
+
+.content {
+  margin-top: 0px;
+  margin-left: 60px;
+}
